@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    background-color: beige;
+}
+
+.navbar li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: black;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover {
+    color: #0088a9
+}
+
+.fart-button img {
+    width: 50%;
+}
+
+.fart-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aquamarine;
+}
+
+.fart-button:hover {
+    cursor: pointer;
+    background-color: white;
+    width: 510px;
+    height: 510px;
+}
+
+.nude-egg img {
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
